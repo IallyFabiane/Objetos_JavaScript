@@ -10,7 +10,6 @@ const objPersonagem = {
    }
 delete objPersonagem.aliado; // deletando a propriedade com notação de ponto
 console.log(objPersonagem.aliado);
-delete objPersonagem.aliado
 delete objPersonagem["status"]; // deletando a propriedade com notação de colchetes
 console.log(objPersonagem.status);
 
