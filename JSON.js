@@ -33,10 +33,10 @@ const jsonLivro = JSON.stringify({
     autor: "João Rubens",
     categoria: "programação",
     versoes: ["ebook", "impresso"]
-   })
+   });
    
 console.log(jsonLivro);
 
 //convertendo JSON para objeto JavaScript
-const objLivro = JSON.parse(jsonLivro)
+const objLivro = JSON.parse(jsonLivro);
 console.log(objLivro);
