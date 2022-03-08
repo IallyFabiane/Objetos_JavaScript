@@ -26,6 +26,7 @@
     }
 ]} */
 
+// convertendo objeto JavaScript para JSON
 const jsonLivro = JSON.stringify({
     id: 50,
     titulo: "Primeiros Passos com NodeJS",
@@ -36,5 +37,6 @@ const jsonLivro = JSON.stringify({
    
 console.log(jsonLivro);
 
+//convertendo JSON para objeto JavaScript
 const objLivro = JSON.parse(jsonLivro)
 console.log(objLivro);
