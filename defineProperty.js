@@ -8,6 +8,8 @@ function Produto (nome, preco, estoque) {
         writable: true, // é alterável
         configurable: false // não pode ser reconfigurado(apagado, por exemplo)
     })
+
+    Object.freeze(this); //não é possível alterá-lo após instanciá-lo
 }
 
 const produto = new Produto('camiseta', 50, 3);
