@@ -18,7 +18,7 @@ function ValidaCPF(cpfEnviado) {
     Object.defineProperty(this, 'cpfLimpo', {
       enumerable: true,
       get: function() {
-        return cpfEnviado.replace(/\D+/g, '');
+        return cpfEnviado.replace(/\D+/g, ''); //troca tudo que não for número por um espaço vazio
       }
     });
   }
@@ -32,7 +32,7 @@ function ValidaCPF(cpfEnviado) {
     const digito1 = this.criaDigito(cpfParcial);
     const digito2 = this.criaDigito(cpfParcial + digito1);
   
-    const novoCpf = cpfParcial + digito1 + digito2;
+    const novoCpf = cpfParcial + digito1 + digito2; //criando um novo cpf e fazendo a validação
     return novoCpf === this.cpfLimpo;
   };
   
