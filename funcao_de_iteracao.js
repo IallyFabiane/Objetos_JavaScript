@@ -13,3 +13,9 @@ numbers.every(isEven); //o primeiro número do array é 1 então não é múltip
 numbers.some(isEven);//o segundo número do array é 2 então é múltiplo de 2, logo some retorna true ao encontrar numbers[1]
 
 numbers.forEach(x => console.log(x % 2 === 0));//itera sobre todos os elementos do array checando se são múltiplos de 2 ou não e retorna true pou false
+
+const myMap = numbers.map(isEven);
+console.log(myMap); // retorna um array contendo os valores resultado da checagem da função isEven a partir da função map
+
+const evenNumbers = numbers.filter(isEven);
+console.log(evenNumbers); // retorna um novo array contendo os valores que retornaram true de acordo com a condição expressa na função isEven
