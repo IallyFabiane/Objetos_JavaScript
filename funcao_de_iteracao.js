@@ -19,3 +19,6 @@ console.log(myMap); // retorna um array contendo os valores resultado da checage
 
 const evenNumbers = numbers.filter(isEven);
 console.log(evenNumbers); // retorna um novo array contendo os valores que retornaram true de acordo com a condição expressa na função isEven
+
+const plus = numbers.reduce((previousValue, currentValue) => previousValue + currentValue);
+console.log(plus); // reduce rezusz o array a um único número inteiro de acordo com o critério passado para a função
