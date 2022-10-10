@@ -6,6 +6,8 @@ console.log(aKeys.next());
 console.log(aKeys.next());
 console.log(aKeys.next());
 console.log(aKeys.next());
+console.log(aKeys.next());
+console.log(aKeys.next()); // quando não houver mais valores para iterar value recebe undefined e done recebe true
 
 // ou ...
 
