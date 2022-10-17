@@ -1,0 +1,3 @@
+let copyNumbers = [0, 1, 2, 3, 4, 5];
+copyNumbers.copyWithin(1, 3 , 5); // copyWithin recebe como primeiro argumento o índice do array de onde se inicia a cópia; como segundo argumento, o índice do valor do array que será copiado, e o terceiro argumento, o índice do último valor a ser considerado para a cópia
+console.log(copyNumbers); // no índice 1 serão copiados do próprio array copyNumbers os valores que se encontrão do índice 3 ao índice 5.
